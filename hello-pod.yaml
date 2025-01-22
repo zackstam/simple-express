@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: backend
+      image: zackstam/simple-express:v2
+      ports:
+        - containerPort: 3000
